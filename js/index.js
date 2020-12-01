@@ -1,5 +1,5 @@
 // Your code goes here
-
+//_____________________________________________________________________
 // click - DONE
 const nav = document.querySelector('nav');
 nav.addEventListener('click', (event) => {
@@ -8,7 +8,7 @@ nav.addEventListener('click', (event) => {
     event.target.style.fontSize = '3rem';
 });
 
-
+//_____________________________________________________________________
 // mouseover - DONE
 const fun = document.querySelector('h1');
 fun.addEventListener('mouseover', event => {
@@ -16,7 +16,7 @@ fun.addEventListener('mouseover', event => {
     event.target.style.fontSize = '5rem';
 });
 
-
+//_____________________________________________________________________
 // mouseout - DONE
 const funOut = document.querySelector('h1');
 funOut.addEventListener('mouseout', event => {
@@ -24,29 +24,29 @@ funOut.addEventListener('mouseout', event => {
     event.target.style.fontSize = '4rem';
 });
 
-
+//_____________________________________________________________________
 // keydown - DONE
 document.body.addEventListener('keydown', event => {
     event.preventDefault();
     alert(`You hit ${event.key}! Don't type here!`);
 });
 
-
+//_____________________________________________________________________
 // wheel - DONE
-const headerNav = document.querySelector('div.container.home');
-headerNav.addEventListener('wheel', event => {
+const containerBody = document.querySelector('div.container.home');
+containerBody.addEventListener('wheel', event => {
     event.target.style.fontSize = '3rem';
     event.target.style.backgroundColor = 'beige';
 });
 
-
+//_____________________________________________________________________
 // load - DONE
 window.addEventListener('load', () =>{
     console.log('page is fully loaded');
     alert('page is fully loaded');
 });
 
-
+//_____________________________________________________________________
 // resize - DONE
 const resizeImg = document.querySelector('.intro img');
 window.addEventListener('resize', () => {
@@ -55,24 +55,25 @@ window.addEventListener('resize', () => {
     
 });
 
-
+//_____________________________________________________________________
 // dblclick - DONE
 const destinationImg = document.querySelector('.content-destination img');
 destinationImg.addEventListener('dblclick', event =>{
     event.target.style.border = 'thick solid red';
 });
 
-
+//_____________________________________________________________________
 // scroll
 const scrollText = document.querySelector('.destination p');
 scrollText.addEventListener('scroll', event => {
     event.target.style.backgroundColor = 'red';
 });
 
-// select 
-const destinationSelect = document.querySelector('.text-content h2');
-destinationSelect.addEventListener('select', event => {
-    event.target.style.fontSize = '5rem';
+//_____________________________________________________________________
+// copy - DONE
+document.addEventListener('copy', () => {
+    alert('Copied to Clipboard');
+    console.log('copy action initiated')
 });
 
 
