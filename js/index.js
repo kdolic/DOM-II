@@ -63,10 +63,10 @@ destinationImg.addEventListener('dblclick', event =>{
 });
 
 //_____________________________________________________________________
-// scroll
-const scrollText = document.querySelector('.destination p');
-scrollText.addEventListener('scroll', event => {
-    event.target.style.backgroundColor = 'red';
+// scroll - DONE
+const scrollText = document.querySelector('.intro h2');
+window.addEventListener('scroll', () => {
+    scrollText.style.color = 'red';
 });
 
 //_____________________________________________________________________
